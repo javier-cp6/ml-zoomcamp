@@ -1,2 +1,2 @@
-# ml-zoomcamp
-DataTalksClub Machine Learning Zoomcamp - Cohort 2023
+# DataTalks.Club Machine Learning Zoomcamp - Cohort 2023
+Course repository: https://github.com/DataTalksClub/machine-learning-zoomcamp
