@@ -5,7 +5,7 @@ model_file = 'model1.bin'
 
 with open(dv_file, 'rb') as f_in:
     dv = pickle.load(f_in)
-    
+
 with open(model_file, 'rb') as f_in:
     model = pickle.load(f_in)
 
