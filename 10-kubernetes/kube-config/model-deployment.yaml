@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tf-serving-clothing-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tf-serving-clothing-model
+  template:
+    metadata:
+      labels:
+        app: tf-serving-clothing-model
+    spec:
+      containers:
+      - name: tf-serving-clothing-model
+        image: clothing-model:xception-v4-001
+        # image: <aws_account_id>.dkr.ecr.<region>.amazonaws.com/mlzoomcamp-images:clothing-model-xception-v4-001 # Update with ECR image URI
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "1"
+        ports:
+        - containerPort: 8500
